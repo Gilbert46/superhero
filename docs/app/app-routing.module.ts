@@ -6,10 +6,10 @@ import { TaulerComponent } from './tauler/tauler.component';
 import { DetallComponent } from './detall/detall.component';
 
 const routes: Routes = [
-  { path: '', redirectTo: '/tauler', pathMatch: 'full'},
-  { path: 'tauler', component: TaulerComponent },
-  { path: 'detall/:id', component: DetallComponent },
-  { path: 'herois', component: HeroisComponent }
+  { path: '', redirectTo: '/gilbert46.github.io/superhero/tauler', pathMatch: 'full'},
+  { path: 'gilbert46.github.io/superhero/tauler', component: TaulerComponent },
+  { path: 'gilbert46.github.io/superhero/detall/:id', component: DetallComponent },
+  { path: 'gilbert46.github.io/superhero/herois', component: HeroisComponent }
 ];
 
 @NgModule({
