@@ -3,29 +3,29 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "superherois": {
+    "superhero": {
       "projectType": "application",
       "schematics": {},
       "root": "",
-      "sourceRoot": "docs",
+      "sourceRoot": "./",
       "prefix": "app",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/superherois",
-            "index": "docs/index.html",
-            "main": "docs/main.ts",
+            "outputPath": "dist/superhero",
+            "index": "./index.html",
+            "main": "./main.ts",
             "polyfills": [
               "zone.js"
             ],
             "tsConfig": "tsconfig.app.json",
             "assets": [
-              "docs/favicon.ico",
-              "docs/assets"
+              "./favicon.ico",
+              "./assets"
             ],
             "styles": [
-              "docs/styles.css"
+              "./styles.css"
             ],
             "scripts": []
           },
@@ -60,10 +60,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "superherois:build:production"
+              "browserTarget": "superhero:build:production"
             },
             "development": {
-              "browserTarget": "superherois:build:development"
+              "browserTarget": "superhero:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -71,7 +71,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "superherois:build"
+            "browserTarget": "superhero:build"
           }
         },
         "test": {
@@ -83,11 +83,11 @@
             ],
             "tsConfig": "tsconfig.spec.json",
             "assets": [
-              "docs/favicon.ico",
-              "docs/assets"
+              "./favicon.ico",
+              "./assets"
             ],
             "styles": [
-              "docs/styles.css"
+              "./styles.css"
             ],
             "scripts": []
           }
